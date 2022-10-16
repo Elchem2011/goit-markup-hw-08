@@ -1,0 +1,147 @@
+/* Footer */
+.footer {
+    background-color: $dark-background-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  
+  
+  /*adress*/
+  
+  .address {
+    font-style: normal;
+  }
+  .address-list {
+    margin-top: 0;
+  }
+  .address-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  
+  .address-link {
+    color:$white-text-color;
+  }
+  
+  .address-link[href^='mailto'],
+  .address-link[href^='tel'] {
+    color: $white-opacity-text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .address-link:hover,
+  .address-link:focus {
+    color: $accent-color;
+  }
+  
+  /*social-net-footer*/
+  
+  .social-net-footer {
+    
+    margin-right: auto;
+  }
+  
+  .social {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .title-net {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-text-color;
+  }
+  
+  .ftr {
+    fill: $white-text-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .social_link:hover,
+  .social_link:focus {
+    background-color: $accent-color;
+  }
+  
+  .main-footer {
+    display: flex;
+    align-items: baseline;
+  }
+  .adress {
+    margin-right: 70px;
+  }
+  
+  .footer-icon {
+    width: 20px;
+    height: 20px;
+    fill: $white-text-color;
+  }
+  
+  
+  .footer-button {
+    display: flex;
+    
+  }
+  
+  .footer-button input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    margin-right: 12px;
+  
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+  
+    align-items: center;
+    letter-spacing: 0.03em;
+    background-color: $dark-background-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: $white-opacity-text-color;
+    
+  }
+  
+  .f-btn {
+    
+    width: 200px;
+    height: 50px;
+    color: $primary-white-color;
+    background: $accent-color;
+    border-radius: 4px;
+    border:none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);  
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+  
+  .f-btn:hover,
+  .f-btn:focus {
+    background: $button-color;
+    
+  }
+  
+  .icon-send {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+  }

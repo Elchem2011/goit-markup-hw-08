@@ -1,0 +1,40 @@
+.section-btn {
+    padding-top: 74px;
+    padding-bottom: 114px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /*div для кнопок*/
+  
+  .prtf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .prtf .prtf-button + .prtf-button {
+    margin-left: 8px;
+  }
+  
+  .prtf-button {
+    font-family: inherit;
+    font-size: 16px;
+    color: $primary-text-color;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 1.612;
+    background-color: $secondary-background-color;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px 25px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+    &:hover,
+    &:focus {
+    color: $white-text-color;
+    background-color: $accent-color;
+    box-shadow: $card-shadow-portfolio;}
+  }

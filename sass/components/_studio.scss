@@ -1,0 +1,298 @@
+.hero {
+  text-align: center;
+  background-color: $dark-background-color;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/overlay.jpg);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  color: $white-text-color;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.button {
+  border: none;
+  padding: 10px 32px;
+  min-width: 216px;
+  border-radius: 4px;
+
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $white-text-color;
+  font-weight: 700;
+  background-color: $accent-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+  background: $button-color;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.work {
+  padding-top: 0;
+}
+
+.team {
+  background-color: $secondary-background-color;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section__title {
+  color: primary-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-left: calc(-1 * $card-set-gap);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.list {
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list__item-sec,
+.list__team-card {
+  width: calc((100% - 90px) / 4);
+  margin-left: 30px;
+}
+
+.list__work-card {
+  width: calc((100% - 60px) / 3);
+  margin-left: 30px;
+}
+
+.list__label-card {
+  position: relative;
+}
+
+.list__label-text {
+  display: flex;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  background: $background-label;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+}
+
+.list__item-sec:nth-child(1) {
+  margin-left: 0px;
+}
+
+.list__work-card:nth-child(1) {
+  margin-left: 0px;
+}
+
+.list__team-card:nth-child(1) {
+  margin-left: 0px;
+}
+
+.list__icon {
+  display: flex;
+  content: '';
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__icon-antenn,
+.list__icon-clock,
+.list__icon-diagram,
+.list__icon-astr {
+  height: 70px;
+  width: 70px;
+}
+
+.list__title {
+  color: $primary-text-color;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list__item {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.list__team-card {
+  box-shadow: $card-shadow;
+  border-radius: 0px 0px 4px 4px;
+  background-color: $primary-background-color;
+}
+
+
+
+.team-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.descr {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.descr__title {
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.descr__team-position {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: $secondary-text-color;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+/*team social svg  */
+
+.team-list {
+  color: $primary-text-color;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__item {
+  margin-right: 10px;
+}
+
+.social-item:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: $primary-icon-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: $accent-color;
+  fill: $primary-white-color;
+}
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+}
+
+/*Постійні кліенти*/
+
+.client-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.client-card {
+  width: calc((100% - 150px) / 6);
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.client-card:nth-child(1) {
+  margin-left: 0px;
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  color: currentColor;
+  text-decoration: none;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
+  width: 170px;
+  fill: $primary-icon-color;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid $accent-color;
+  fill: $accent-color;
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+}
+
